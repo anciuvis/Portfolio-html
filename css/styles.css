@@ -1,0 +1,25 @@
+*	{
+	box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+	background: url('../img/fond.png') repeat;
+	font-family: 'Bree Serif', serif;
+}
+
+.navigation {
+  display: inline-block;
+}
+
+.navbar-brand {
+	min-height: 100px;
+}
+
+.jumbotron {
+	background: url('../img/bg_header.jpg');
+	background-size: cover;
+	height: 40rem;
+}
