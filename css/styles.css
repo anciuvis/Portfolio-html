@@ -8,6 +8,7 @@ html {
 body {
 	background: url('../img/fond.png') repeat;
 	font-family: 'Bree Serif', serif;
+	font-size: 14px;
 }
 
 .navigation {
@@ -22,4 +23,12 @@ body {
 	background: url('../img/bg_header.jpg');
 	background-size: cover;
 	height: 40rem;
+}
+
+.jumbotron h1 {
+	font-size: 3rem;
+}
+
+.jumbotron p {
+	font-size: 1.4rem;
 }
