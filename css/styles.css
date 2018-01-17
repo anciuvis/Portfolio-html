@@ -92,3 +92,7 @@ h4 {
 .row p {
 	color: var(--text-color);
 }
+
+textarea {
+	resize: none;
+}
