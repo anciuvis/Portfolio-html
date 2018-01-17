@@ -9,20 +9,51 @@ body {
 	background: url('../img/fond.png') repeat;
 	font-family: 'Bree Serif', serif;
 	font-size: 14px;
+	--text-color: #999999;
+	--theme-color: #eb1a62;
 }
 
-.navigation {
-  display: inline-block;
+.container {
+	width: 60%;
+}
+
+.navbar {
+	width: 60%;
+	margin-bottom: 0;
 }
 
 .navbar-brand {
-	min-height: 100px;
+	min-height: 70px;
+	margin: 1.4rem 0;
+}
+
+.navbar-text, .navbar-nav>li>a {
+	padding: 3rem;
+	font-size: 1.8rem;
+	font-weight: normal;
+	margin: 1rem;
+	color: var(--text-color);
+	line-height: 1.4rem;
+}
+
+.fa {
+	display: block;
+	text-align: center;
+	margin: 0.5rem;
+}
+
+.navbar-text {
+	font-size: 2.8rem;
+	margin: 1rem 0;
+	padding-left: 0;
 }
 
 .jumbotron {
 	background: url('../img/bg_header.jpg');
 	background-size: cover;
-	height: 40rem;
+	height: 45rem;
+	text-align: center;
+	color: white;
 }
 
 .jumbotron h1 {
@@ -31,4 +62,33 @@ body {
 
 .jumbotron p {
 	font-size: 1.4rem;
+}
+
+.page-header {
+	text-align: center;
+	color: var(--theme-color);
+}
+
+.btn-primary {
+	background-color: #eb1a62;
+	background-image: linear-gradient(to bottom,#eb1a62 0,#d20748 100%);
+	border-color: #843945;
+}
+
+.row img {
+	width: 100%;
+}
+
+canvas#myChart {
+	height:400px !important;
+	width: 400px !important;
+	margin: 0 auto;
+}
+
+h4 {
+	color: var(--theme-color);
+}
+
+.row p {
+	color: var(--text-color);
 }

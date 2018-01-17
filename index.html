@@ -10,18 +10,96 @@
 	</head>
 	<body>
 		<nav class="container navbar">
-      <a class="navbar-nav" title="Logo" href="index.html"><img src="img/logo.svg" class="navbar-brand" alt="Logo"/><p class="nav navbar-text">John Doe</pn></a>
+      <a class="navbar-nav" title="Logo" href="index.html"><img src="img/logo.svg" class="navbar-brand" alt="Logo"/><h2 class="nav navbar-text">John Doe</h2></a>
       <ul class="nav navbar-nav navbar-right">
-        <li><a title="home" href="#">Home</a></li>
-        <li><a title="projects" href="#">Projects</a></li>
-        <li><a title="contact" href="#">Contact</a></li>
+        <li><a title="home" href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+        <li><a title="projects" href="#"><i class="fa fa-folder-open" aria-hidden="true"></i>Projects</a></li>
+        <li><a title="contact" href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a></li>
       </ul>
     </nav>
 		<div class="jumbotron">
 			<h1>Hello and welcome to my portfolio</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<button type="button" class="btn btn-lg btn-primary">Decouvrez-moi!</button>
 		</div>
 		<div class="container">
+			<h3 class="page-header">
+				- Competence -
+			</h3>
+			<div class="row">
+				<canvas id="myChart" width="400" height="400"></canvas>
+				<script type="text/javascript">
+				var ctx = document.getElementById("myChart").getContext("2d");
+				var myChart = new Chart(ctx, {
+					type: 'doughnut',
+					data: {
+						labels: ["HTML", "CSS", "JAVASCRIPT"],
+						datasets: [{
+							data: [60, 50, 40],
+							backgroundColor: [
+								'rgba(243, 69, 60, 1)',
+								'rgba(249, 129, 58, 1)',
+								'rgba(245, 174, 40, 1)'
+							],
+							borderWidth: 0
+						}]
+					},
+					options: {
+						legend: {
+							display: false
+						}
+					}
+				});
+			</script>
+			</div>
+		</div>
+		<div class="container">
+			<h3 class="page-header">
+				- Realizations -
+			</h3>
+			<div class="row">
+
+			</div>
+			<h3 class="page-header">
+				- Examples -
+			</h3>
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<h4>Orange</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<img src="img/real/1.png" alt="orange">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<img src="img/real/2.png" alt="orange">
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<h4>Clock</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<h4>Leaf</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<img src="img/real/3.png" alt="orange">
+				</div>
+			</div>
+			<h3 class="page-header">
+				- Contacts -
+			</h3>
+			<div class="row">
+				<p class="col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<input type="text" name="name" placeholder="Your name" class="col-xs-12 col-sm-6">
+				<input type="text" name="email" placeholder="Your email" class="col-xs-12 col-sm-6">
+				<textarea name="msg" class="col-xs-12" placeholder="Your message"></textarea>
+			</div>
 		</div>
 	</body>
 </html>
