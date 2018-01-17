@@ -93,6 +93,17 @@ h4 {
 	color: var(--text-color);
 }
 
+input {
+	border-radius: 50px;
+	border-style: solid;
+	margin: 1rem 0;
+	border-width: 1px;
+}
+
 textarea {
 	resize: none;
+	border-radius: 50px;
+}
+footer {
+	height: 100px;
 }
